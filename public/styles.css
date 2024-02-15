@@ -2,8 +2,261 @@ body {
     background-color: #222831;
     color: #DDDDDD;
     font-family: "Roboto Slab", serif;
+    margin: 0;
+}
+  /* Selection color -------------------------- */
+::-moz-selection { /* Code for Firefox */
+    color: black;
+    background: #F05454;
+  }
+  
+  ::selection {
+    color: black;
+    background: #F05454;
+  }
+
+.dot {
+  color: #F05454;
+  font-size: large;
 }
 
-h1 {
-    font-weight: 500;
+/* Selection color -------------------------- */
+
+.chip {
+  background-color: #9B9CA0;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+  
+/* Side Bar -------------------------- */
+.sidebar {
+  position: fixed;
+  left: 0; 
+  top: 0;
+  bottom: 0; 
+  width: 60px; 
+  background-color: black; 
+  color: #9B9CA0; 
+  padding: 20px; 
+  writing-mode: vertical-lr; 
+  text-orientation: mixed; 
+}
+  
+.sidebar a {
+  display: inline-block;
+  color: #9B9CA0; 
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 40px;
+ }
+
+.SB-Container {
+  display: inline-block;
+  width: 60px;
+}
+
+.sidebar a:hover {
+  opacity: 50%;
+}
+
+
+/* header -------------------------- */
+
+header {
+    margin-top: 20px;
+    margin-left: 160px;
+}
+
+.headerLinks {
+    padding: 5px;
+    color: #9B9CA0;
+}
+
+.headerLinks:hover {
+    color: #F05454; 
+}
+
+.resumeBtn {
+  position: absolute;
+  right: 15px;
+  background-color: transparent;
+  color: #F05454;
+  border: 2px solid #F05454;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: color 0.3s, border-color 0.3s;
+}
+
+.resumeBtn:hover {
+  background-color: #F05454;
+  color: black;
+  border-color: #F05454;
+}
+
+/* welcome -------------------------- */
+.welcomeContainer {
+  margin-left: 100px;
+  display: flex;
+  justify-content: center; /* Isso centraliza horizontalmente */
+  align-items: center; /* Isso centraliza verticalmente */
+  height: 850px; /* Ajuste conforme necessário */
+}
+
+.welcome {
+  width: 800px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between; /* Adjusts spacing between text and image */
+}
+
+.textContainer {
+  width: 60%; /* Adjust as needed */
+}
+
+.myName {
+  font-size: 60px;
+  font-weight: 500;
+  color: #DDDDDD;
+}
+
+.contactBtn {
+  background-color: #F05454;
+  color: black;
+  border: 2px solid #F05454;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: color 0.3s, border-color 0.3s;
+}
+
+.welcomeText {
+  font-size: 15px;
+}
+
+.imageContainer {
+  width: 40%; /* Adjust as needed */
+  display: flex;
+  justify-content: flex-end; /* Aligns image to the right */
+  align-items: center;
+}
+
+.profilePic {
+  width: 250px;
+  border-radius: 50%;
+  background-color: white;
+  border: 3px solid #F05454;
+  padding: 5px;
+}
+
+/* about -------------------------- */
+
+h2 {
+  font-size: 35px;
+  color: #DDDDDD;
+  display: inline-block;
+}
+
+.aboutContainer {
+  margin-left: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 850px;  
+}
+
+.about {
+  width: 800px;
+  max-width: 100%; 
+}
+
+.aboutContent {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.aboutText {
+  width: calc(60% - 20px);
+  margin-right: 20px; 
+  font-size: 15px;
+}
+
+.aboutSkills {
+  width: 40%;
+  max-width: calc(40% - 20px); 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; 
+}
+
+.myLinksText {
+  display: inline-block;
+  color: #F05454;
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 10px; 
+}
+
+.chip {
+  margin-right: 10px;
+  margin-bottom: 10px; 
+  height: 30px;
+  display: flex;
+  align-items: center; 
+  padding: 0 10px; 
+  color: #333; 
+}
+
+
+/* Projects ----------------------------------------------------------------*/
+
+h3 {
+  color: white;
+}
+
+.projectsContainer {
+  margin-left: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 850px; 
+}
+
+.projects {
+  width: 800px;
+}
+
+.projectCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Ensure space between cards */
+}
+
+.ProjectsContainer {
+  width: calc(50% - 10px); /* Adjusted to account for margin */
+  margin-bottom: 20px; /* Add margin between cards */
+}
+
+.descriptionContainer {
+  padding: 20px; /* Add padding around description */
+  background-color: black; /* Add background color */
+  border-radius: 8px; /* Add border radius */
+}
+
+.imageContainer {
+  width: 100%; /* Ensure the image container takes full width */
+  height: 300px; /* Set a fixed height for the image container */
+  overflow: hidden; /* Hide overflow content */
+}
+
+.projectImg {
+  width: 100%; /* Ensure the image takes full width of the container */
+  height: 250px; /* Ensure the image takes full height of the container */
+  object-fit: cover; /* Scale the image while preserving its aspect ratio */
+  border-radius: 15px;
 }
