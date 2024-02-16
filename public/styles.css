@@ -127,6 +127,8 @@ header {
 
 .textContainer {
   width: 65%; 
+  text-align: justify;
+  margin-right: 10px;
 }
 
 .myName {
@@ -420,38 +422,231 @@ h3 {
   justify-content: center;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEdia query ----------------------------------------------------------------*/
+
 /* For mobile devices */
 @media only screen and (max-width: 768px) {
-/* Welcome */
-  .welcomeContainer {
-    margin-left: 100px; 
-  }
+
+  body {
+    width: 100%;
+
+}
+
+.chip, .myLinksText {
+  display: none;
+}
+
+/* welcome -------------------------- */
+
+.welcomeContainer {
+  margin-top: 50px;
+  margin-left: 80px;
+  display: inline-block;
+  width: 280px;
+  justify-content: center; 
+  align-items: center; 
+  height: 800px; 
+}
+
+.welcome {
+  width: 100%;
+}
+
+.content {
+  display: block; 
+}
+
+.myName {
+  font-size: 35px;
+}
+
+.textContainer {
+  width: 100%; /* Take full width on smaller screens */
+  margin-bottom: 20px; /* Add spacing between text and image */
+}
+
+.imageContainer {
+  max-width: 100%; /* Take full width on smaller screens */
+  justify-content: center; /* Center image horizontally */
+}
+
+/* about -------------------------- */
+
+h2 {
+  font-size: 30px;
+  color: #DDDDDD;
+  display: inline-block;
+}
+
+.aboutHr {
+  visibility: hidden;
+}
+
+.aboutContainer {
+  margin-left: 80px;
+  text-align: justify;
+}
+
+
+.aboutContent {
+  display: block;
+}
+
+.aboutText {
+  width: 280px;
+  margin-right: 20px; 
+  font-size: 15px;
+}
+
+
+/* Projects ----------------------------------------------------------------*/
+h3 {
+  margin-top: 10px;
+  color: white;
+  display: inline-block;
+}
+
+.stackP {
+  color:#F05454
+}
+
+.projectsHr {
+  visibility: hidden;
+}
+
+.projectsContainer {
+  margin-top: 120px;
+  margin-left: 80px;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  min-height: 1200px; 
+}
+
+.projects {
+  max-width: 850px;
+}
+
+
+.projectCards {
+  display: block;
+}
+
+.cardContainer {
+  width: 270px; 
+  margin-bottom: 20px; 
+  margin-right: 15px;
+  display: flex;
+}
+
+
+.projectImageContainer {
+  width: 280px;
+  height: 250px; 
+}
+
+.projectImg {
+  width: 270px; 
+  height: 240px; 
+}
+
+/* Experience ----------------------------------------------------------------*/
+
+.expHr {
+  visibility: hidden;
+}
+
+.experienceContainer {
+  margin-top: 150px;
+  margin-left: 80px;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  min-height: 700px; 
+}
+
+.experience {
+  max-width: 850px;
+}
+
+.wrapper {
+  display: block;
+}
+
+.experienceChips {
+  flex-wrap: wrap;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5px;
+  text-align: justify;
+
+}
+
+/* Contact ----------------------------------------------------------------*/
+
+.contactHr {
+  visibility: hidden;
+}
+
+.contactContainer {
+  margin-left: 80px;
+  display: block;
+}
+
+.contact {
+  max-width: 850px;
+}
+
+.contactWrapper {
+  display: block;
+}
+
+.contactCard {
+  margin-top: 10px;
+  background-color: #DDDDDD;
+  text-align: center;
+  border-radius: 15px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+
+
   
-  .welcome {
-    width: 100%; /* Take full width on smaller screens */
-  }
-
-  .aboutHr {
-    visibility: hidden;
-  }
-
-  .content {
-    flex-direction: column; /* Stack content vertically on smaller screens */
-  }
-
-  .textContainer {
-    width: 100%; /* Take full width on smaller screens */
-    margin-bottom: 20px; /* Add spacing between text and image */
-  }
-
-  .imageContainer {
-    max-width: 100%; /* Take full width on smaller screens */
-    justify-content: center; /* Center image horizontally */
-  }
-
-  .profilePic {
-    width: 200px; /* Adjust image size for smaller screens */
-    height: 200px;
-  }
 
 }
