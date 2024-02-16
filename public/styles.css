@@ -17,7 +17,7 @@ body {
 
 .dot {
   color: #F05454;
-  font-size: large;
+  
 }
 
 /* Selection color -------------------------- */
@@ -26,6 +26,7 @@ body {
   background-color: #9B9CA0;
   border-radius: 15px;
   padding: 5px;
+  width: 85px;
 }
 
   
@@ -38,26 +39,36 @@ body {
   width: 60px; 
   background-color: black; 
   color: #9B9CA0; 
-  padding: 20px; 
+  
   writing-mode: vertical-lr; 
   text-orientation: mixed; 
 }
-  
+
+#logo {
+  margin-top: 20px;
+}
+
 .sidebar a {
   display: inline-block;
   color: #9B9CA0; 
-  padding-top: 20px;
-  padding-bottom: 20px;
-  width: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  width: 30px;
  }
 
 .SB-Container {
   display: inline-block;
   width: 60px;
+  padding-left: 20px;
+}
+
+
+.SB-Container:hover {
+  border-right: #F05454 solid;
 }
 
 .sidebar a:hover {
-  opacity: 50%;
+  color: #DDDDDD;
 }
 
 
@@ -65,7 +76,7 @@ body {
 
 header {
     margin-top: 20px;
-    margin-left: 160px;
+    margin-left: 75px;
 }
 
 .headerLinks {
@@ -97,31 +108,64 @@ header {
 }
 
 /* welcome -------------------------- */
+
 .welcomeContainer {
   margin-left: 100px;
   display: flex;
-  justify-content: center; /* Isso centraliza horizontalmente */
-  align-items: center; /* Isso centraliza verticalmente */
-  height: 850px; /* Ajuste conforme necessário */
+  justify-content: center; 
+  align-items: center; 
+  height: 800px; 
 }
 
 .welcome {
-  width: 800px;
+  width: 850px;
 }
 
 .content {
-  display: flex;
-  justify-content: space-between; /* Adjusts spacing between text and image */
+  display: flex; 
 }
 
 .textContainer {
-  width: 60%; /* Adjust as needed */
+  width: 65%; 
 }
 
 .myName {
-  font-size: 60px;
+  font-size: 55px;
   font-weight: 500;
   color: #DDDDDD;
+}
+
+
+
+.welcomeText {
+  font-size: 15px;
+}
+
+.imageContainer {
+  max-width: 300px; 
+  display: flex;
+  justify-content: flex-end; 
+  align-items: center;
+  background-color: transparent;
+  opacity: 0.8;
+  background-size: 10px 10px;
+  background-image: repeating-linear-gradient(45deg, #F05454 0, #c24444 1px, transparent 0, transparent 50%);
+  padding: 15px;
+  border-radius: 15px;
+
+}
+
+.profilePic {
+  width: 250px;
+  border-radius: 50%;
+  background-color: white;
+  border: 3px solid #F05454;
+  padding: 10px;
+}
+
+.profilePic:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
 }
 
 .contactBtn {
@@ -135,31 +179,19 @@ header {
   transition: color 0.3s, border-color 0.3s;
 }
 
-.welcomeText {
-  font-size: 15px;
-}
-
-.imageContainer {
-  width: 40%; /* Adjust as needed */
-  display: flex;
-  justify-content: flex-end; /* Aligns image to the right */
-  align-items: center;
-}
-
-.profilePic {
-  width: 250px;
-  border-radius: 50%;
-  background-color: white;
-  border: 3px solid #F05454;
-  padding: 5px;
-}
-
 /* about -------------------------- */
 
 h2 {
   font-size: 35px;
   color: #DDDDDD;
   display: inline-block;
+}
+
+.aboutHr {
+  width: 84.5%; /* Adjust the width as needed */
+  float: right;
+  margin-top: 27px; /* Adjust the top margin to align it with the text */
+  border-color: #DDDDDD; /* Set border color if needed */
 }
 
 .aboutContainer {
@@ -171,7 +203,7 @@ h2 {
 }
 
 .about {
-  width: 800px;
+  width: 850px;
   max-width: 100%; 
 }
 
@@ -186,14 +218,6 @@ h2 {
   font-size: 15px;
 }
 
-.aboutSkills {
-  width: 40%;
-  max-width: calc(40% - 20px); 
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start; 
-}
-
 .myLinksText {
   display: inline-block;
   color: #F05454;
@@ -202,21 +226,45 @@ h2 {
   margin-bottom: 10px; 
 }
 
+.aboutIcon {
+  position: relative;
+  top: 7px;
+}
+
+.skillsTitle {
+  display: block;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5px;
+}
+
 .chip {
-  margin-right: 10px;
-  margin-bottom: 10px; 
   height: 30px;
-  display: flex;
-  align-items: center; 
-  padding: 0 10px; 
+  align-items: center;
   color: #333; 
+  text-align: center;
 }
 
 
 /* Projects ----------------------------------------------------------------*/
-
 h3 {
+  margin-top: 10px;
   color: white;
+  display: inline-block;
+}
+
+.stackP {
+  color:#F05454
+}
+
+.projectsHr {
+  width:81%; /* Adjust the width as needed */
+  float: right;
+  margin-top: 28px; /* Adjust the top margin to align it with the text */
+  border-color: #DDDDDD; /* Set border color if needed */
 }
 
 .projectsContainer {
@@ -224,39 +272,186 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 850px; 
+  min-height: 1200px; 
 }
 
 .projects {
-  width: 800px;
+  max-width: 850px;
 }
+
 
 .projectCards {
-  display: flex;
+  display: grid;
   flex-wrap: wrap;
-  justify-content: space-between; /* Ensure space between cards */
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
 }
 
-.ProjectsContainer {
-  width: calc(50% - 10px); /* Adjusted to account for margin */
-  margin-bottom: 20px; /* Add margin between cards */
+.cardContainer {
+  width: calc(50% - 50px); 
+  margin-bottom: 20px; 
+  margin-right: 15px;
+  display: flex;
 }
 
-.descriptionContainer {
-  padding: 20px; /* Add padding around description */
-  background-color: black; /* Add background color */
-  border-radius: 8px; /* Add border radius */
+.cardText {
+  padding: 20px; 
+  background-color: black; 
+  border-radius: 15px; 
+  height: 100%; 
+  display: flex; 
+  flex-direction: column; 
 }
 
-.imageContainer {
-  width: 100%; /* Ensure the image container takes full width */
-  height: 300px; /* Set a fixed height for the image container */
-  overflow: hidden; /* Hide overflow content */
+.projectImageContainer {
+  width: 375px;
+  height: 300px; 
+  overflow: hidden;
+  background-color: transparent;
+  opacity: 0.8;
+  background-size: 10px 10px;
+  background-image: repeating-linear-gradient(45deg, #F05454 0, #c24444 1px, transparent 0, transparent 50%);
+  padding: 15px;
+  border-radius: 15px;
 }
 
 .projectImg {
-  width: 100%; /* Ensure the image takes full width of the container */
-  height: 250px; /* Ensure the image takes full height of the container */
-  object-fit: cover; /* Scale the image while preserving its aspect ratio */
+  width: 355px; 
+  height: 280px; 
+  object-fit: fill;
   border-radius: 15px;
+}
+
+/* Experience ----------------------------------------------------------------*/
+
+.expHr {
+  width:75%; /* Adjust the width as needed */
+  float: right;
+  margin-top: 28px; /* Adjust the top margin to align it with the text */
+  border-color: #DDDDDD; /* Set border color if needed */
+}
+
+.experienceContainer {
+  margin-left: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 700px; 
+}
+
+.experience {
+  max-width: 850px;
+}
+
+.wrapper {
+  display: grid;
+  flex-wrap: wrap;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+  text-align: justify;
+}
+
+.experienceChips {
+  flex-wrap: wrap;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5px;
+  text-align: justify;
+
+}
+
+/* Contact ----------------------------------------------------------------*/
+
+.contactHr {
+  width:81%; 
+  float: right;
+  margin-top: 28px; 
+  border-color: #DDDDDD;
+}
+
+
+.contactContainer {
+  margin-left: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px; 
+}
+
+.contact {
+  max-width: 850px;
+}
+
+.contactWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.contactCard {
+  background-color: #DDDDDD;
+  text-align: center;
+  border-radius: 15px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactWrapper a {
+  color: #F05454;
+  font-size: 1em;
+}
+
+.contactIcon {
+  position: relative;
+  right: 5px;
+}
+
+.contactCard:hover{
+  border-color: #F05454 solid;
+}
+
+/* Contact ----------------------------------------------------------------*/
+
+.footer {
+  display: flex;
+  height: 450px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* For mobile devices */
+@media only screen and (max-width: 768px) {
+/* Welcome */
+  .welcomeContainer {
+    margin-left: 100px; 
+  }
+  
+  .welcome {
+    width: 100%; /* Take full width on smaller screens */
+  }
+
+  .aboutHr {
+    visibility: hidden;
+  }
+
+  .content {
+    flex-direction: column; /* Stack content vertically on smaller screens */
+  }
+
+  .textContainer {
+    width: 100%; /* Take full width on smaller screens */
+    margin-bottom: 20px; /* Add spacing between text and image */
+  }
+
+  .imageContainer {
+    max-width: 100%; /* Take full width on smaller screens */
+    justify-content: center; /* Center image horizontally */
+  }
+
+  .profilePic {
+    width: 200px; /* Adjust image size for smaller screens */
+    height: 200px;
+  }
+
 }

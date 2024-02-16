@@ -3,7 +3,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function LinkIcon(props) {
    return (
-      <a 
+      <a
+       target="_blank" 
         href={props.link}> 
           <FontAwesomeIcon 
           className="headerLinks" 

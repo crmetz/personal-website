@@ -7,17 +7,17 @@ import { faGithub} from '@fortawesome/free-brands-svg-icons';
 
 function ProjectCard(props) {
     return ( 
-        <div className="ProjectsContainer">
+        <div className="cardContainer">
             
-            <div className="descriptionContainer">
-                <div className="imageContainer"> 
+            <div className="cardText">
+                <div className="projectImageContainer"> 
                     <img className="projectImg" src={props.imgURL} alt="project" />
                 </div>
                 <h3>{props.name}</h3>
-                <hr />
-                <LinkIcon link="https://github.com/crmetz" icon={faGithub} />
-                <p>{props.stack}</p>
+                
+                <p className="stackP">{props.stack}</p>
                 <p>{props.desc}</p>
+                <LinkIcon link={props.projectLink} icon={faGithub} />
             </div>
         </div>
     )
