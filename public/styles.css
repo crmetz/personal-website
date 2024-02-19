@@ -88,6 +88,11 @@ header {
     color: #F05454; 
 }
 
+.language-container {
+  position: relative;
+  bottom: 7px;
+}
+
 .resumeBtn {
   position: absolute;
   right: 15px;
@@ -106,6 +111,57 @@ header {
   color: black;
   border-color: #F05454;
 }
+
+/* change language btn -------------------------- */
+.language-container {
+  position: relative;
+  display: inline-block;
+}
+
+.flag-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.flag-image {
+  width: 30px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.dropdown {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  background-color: #F05454;
+  min-width: 100px;
+  border: transparent;
+  z-index: 1;
+}
+
+.dropdown-item {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background-color: #f1f1f1;
+  color: #222831;
+}
+
+/* .dropdown-item:hover {
+  background-color: #222831;
+  color: #DDDDDD;
+} */
+
+
+
+
 
 /* welcome -------------------------- */
 
@@ -216,6 +272,7 @@ h2 {
 
 .aboutText {
   width: calc(60% - 20px);
+  text-align: justify;
   margin-right: 20px; 
   font-size: 15px;
 }
@@ -303,6 +360,9 @@ h3 {
   height: 100%; 
   display: flex; 
   flex-direction: column; 
+  text-align: justify;
+
+  
 }
 
 .projectImageContainer {
@@ -377,6 +437,7 @@ h3 {
   justify-content: center;
   align-items: center;
   min-height: 400px; 
+  text-align: justify;
 }
 
 .contact {
@@ -464,11 +525,44 @@ h3 {
   display: none;
 }
 
+/* Side Bar -------------------------- */
+
+.sidebar {
+  width: 40px; 
+}
+
+.sidebar a {
+  margin-left: 8px;
+ }
+
+.SB-Container {
+  width: 40px;
+  padding-left: 0px;
+}
+
+/* header -------------------------- */
+
+header {
+  margin-top: 15px;
+  margin-left: 55px;
+}
+
+.headerLinks {
+  padding: 5px;
+  color: #9B9CA0;
+}
+
+.resumeBtn {
+  position: static;
+  margin-left: 10px;
+}
+
+
 /* welcome -------------------------- */
 
 .welcomeContainer {
   margin-top: 50px;
-  margin-left: 80px;
+  margin-left: 60px;
   display: inline-block;
   width: 280px;
   justify-content: center; 
@@ -511,7 +605,7 @@ h2 {
 }
 
 .aboutContainer {
-  margin-left: 80px;
+  margin-left: 60px;
   text-align: justify;
 }
 
@@ -544,7 +638,7 @@ h3 {
 
 .projectsContainer {
   margin-top: 120px;
-  margin-left: 80px;
+  margin-left: 60px;
   display: block;
   justify-content: center;
   align-items: center;
@@ -586,7 +680,7 @@ h3 {
 
 .experienceContainer {
   margin-top: 150px;
-  margin-left: 80px;
+  margin-left: 60px;
   display: block;
   justify-content: center;
   align-items: center;
@@ -616,7 +710,7 @@ h3 {
 }
 
 .contactContainer {
-  margin-left: 80px;
+  margin-left: 60px;
   display: block;
 }
 

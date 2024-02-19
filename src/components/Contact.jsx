@@ -1,11 +1,13 @@
 import React from "react";
+import { useTranslation} from 'react-i18next';
 
 function Contact() {
+    const { t } = useTranslation();
     return ( 
         <div id="contact" className="contactContainer">
             <div className="contact">
-                <h2> Contact<span className="dot">.</span> </h2> <hr className="contactHr" />
-                <p> Shoot me an email, and let's connect! You can also send me a message on Linkedin or WhatsApp if that's more your speed. </p>
+                <h2> {t('contact.title')}<span className="dot">.</span> </h2> <hr className="contactHr" />
+                <p> {t('contact.description')} </p>
                 <div className="contactWrapper">
                     
                 <a target="_blank" href="mailto:cristianrmetz@gmail.com"> 
