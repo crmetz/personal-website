@@ -16,7 +16,7 @@ function Header() {
             <LinkIcon link="https://github.com/crmetz" icon={faGithub} />
             <LinkIcon link="https://www.instagram.com/cristianmetz_/" icon={faInstagram} />
             <LanguageButton />
-            <a href="https://drive.google.com/uc?export=download&id=1yf6eVUKIMnJoOlzdS1aw4FDFh3sx-DSC"><Button onClick text={t('header.resume')} /></a>
+            <a href={t('header.resumeLink')}><Button onClick text={t('header.resume')} /></a>
         </header>
 
 

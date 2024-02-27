@@ -26,7 +26,8 @@ i18n
             contact: 'Contact'
           },
           header: {
-            resume: "My resume"
+            resume: "My resume",
+            resumeLink: "https://drive.google.com/uc?export=download&id=1PwoAnCB_bTM0aI0GOfH_NeNcQkbZm0pq"
           },
           welcome: {
             name: "Cristian Metz👋🏼",
@@ -114,7 +115,8 @@ i18n
             contact: 'Contato'
           },
           header: {
-            resume: 'Currículo'
+            resume: 'Currículo',
+            resumeLink: "https://drive.google.com/uc?export=download&id=1yf6eVUKIMnJoOlzdS1aw4FDFh3sx-DSC"
           },
           welcome: {
             name: 'Cristian Metz👋🏼',
